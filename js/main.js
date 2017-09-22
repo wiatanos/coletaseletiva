@@ -10,17 +10,17 @@ function initialize() {
 	geocoder = new google.maps.Geocoder();
 	var latlng = new google.maps.LatLng(-23.6386442,-45.4337782);
 	var mapOptions = {
-		zoom: 13,
-		center: latlng,
-			//mapTypeId: google.maps.MapTypeId.ROADMAP,
-			//mapTypeControl: false,
-			//disableDefaultUI: true,
+			zoom: 13,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			mapTypeControl: false,
+			disableDefaultUI: true,
 		}
 
 		map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
 		var ctaLayer = new google.maps.KmlLayer({
-			url: 'mapa.kml',
+			url: 'https://www.dropbox.com/s/f32mc16cmbyd338/mapa.kmz?dl=1',
 			map: map
 		});
 

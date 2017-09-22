@@ -66,7 +66,8 @@ h1{
 
 
 #over_map, #title, #arrow_down {position: absolute; z-index: 99;}
-#over_map{top: 20px; right: 50px;}
+#over_map{top: 50px; left: 80px;}
+#over_map ul{box-shadow: 0px 0px 5px 0px #7f8c8d; text-shadow: 1px 1px 10px black; padding: 5px; font-weight: bold; font-size: 15px; margin: 0;}
 #title{top: 50px; padding: 0; margin: 0;}
 #title img{width: 300px;}
 #arrow_down{bottom: 20px; left: 50%;}

@@ -62,7 +62,12 @@
             <div id="map_container" class="col-xs-12">
               <div id="map"></div>
               <div id="over_map">
-                
+                <span class="text-center" style="text-shadow: 0px 0px 5px black;"><h4>Coleta Seletiva Itinerarios</h4></span>
+                  <ul style="background-color: #2ecc71; margin-top: 5px;">Segunda</ul>
+                  <ul style="background-color: yellow;">Terça</ul>
+                  <ul style="background-color: orange;">Quarta</ul>
+                  <ul style="background-color: #3498db;">Quinta</ul>
+                  <ul style="background-color: #d35400;">Sexta</ul>
               </div>
             </div>
           </div>
@@ -141,11 +146,10 @@
                   </h4>
                 </article>
 
-                <h2 class="col-xs-12 col-md-5 col-xs-offset-0 col-md-offset-2">Fale Conosco</h2>
+                <h2 class="col-xs-12 col-md-5">Fale Conosco</h2>
 
                 <div class="input-group col-xs-12 col-md-2 col-xs-offset-0 col-md-offset-5">
                   <select class="form-control" id="select_contato">
-                    <option value="">Selecione o tipo de contato</option>
                     <option value="1">Agendamento</option>
                     <option value="2">Contato</option>
                   </select>
@@ -187,7 +191,7 @@
 
 
 
-                <form method="post" action="db/form-data.php" id="form_agenda" class=" col-xs-offset-0 col-md-offset-7" hidden>
+                <form method="post" action="db/form-data.php" id="form_agenda" class=" col-xs-offset-0 col-md-offset-7">
 
                   <div class="form-group ">
                     <label>Nome/ Empresa</label>
