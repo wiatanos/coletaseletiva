@@ -68,8 +68,10 @@
                   <ul style="background-color: orange;">Quarta</ul>
                   <ul style="background-color: #3498db;">Quinta</ul>
                   <ul style="background-color: #d35400;">Sexta</ul>
+                  <a href="#section5"><input type="button" class="form-control btn btn-primary" style="margin-top: 20px;" value="Agendar Coleta"></a>
               </div>
             </div>
+            <input id="pac-input" class="controls" type="text" placeholder="Busque seu endereço">
           </div>
 
           <div class="area2 col-xs-12" id="section2">
@@ -148,7 +150,7 @@
 
                 <h2 class="col-xs-12 col-md-5">Fale Conosco</h2>
 
-                <div class="input-group col-xs-12 col-md-2 col-xs-offset-0 col-md-offset-5">
+                <div class="input-group">
                   <select class="form-control" id="select_contato">
                     <option value="1">Agendamento</option>
                     <option value="2">Contato</option>
@@ -156,7 +158,7 @@
                 </div>
                 
 
-                <form method="post" action="db/mail.php" id="form_contato" class=" col-xs-offset-0 col-md-offset-7" hidden>
+                <form method="post" action="db/mail.php" id="form_contato" class="col-xs-offset-0 col-md-offset-7" hidden>
 
                   <div class="form-group">
                     <label>Nome</label>
@@ -191,7 +193,7 @@
 
 
 
-                <form method="post" action="db/form-data.php" id="form_agenda" class=" col-xs-offset-0 col-md-offset-7">
+                <form method="post" action="db/form-data.php" id="form_agenda" class="col-xs-offset-0 col-md-offset-7">
 
                   <div class="form-group ">
                     <label>Nome/ Empresa</label>
@@ -262,7 +264,7 @@
     </body>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA5i_gIrF096_zaINRRGh5GHpJbTpGN_SY"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDNYcra7RZ5stWmAcdNk_MB6d3u15bzTlI&libraries=places"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dialog.min.js"></script>
     <script type="text/javascript" src="js/jquery.mask.min.js"></script>
