@@ -7,7 +7,7 @@ $query->execute();
 $rows = ($query->fetchAll());
 
     echo "<table  border=\"1\" cellspacing=\"0\" bordercolor=\"#222\" id=\"list\">";
-    echo "<tr><th>Nome</th><th>email</th><th>telefone</th><th>endereço</th><th>bairro</th><th>cep</th><th>lat</th><th>long</th><th>data da coleta</th><th>peso</th>";
+    echo "<tr><th>Nome</th><th>email</th><th>telefone</th><th>endereço</th><th>bairro</th><th>cep</th><th>lat</th><th>long</th><th>peso</th>";
 
 foreach ($rows as $key => $value) {
     echo "<tr>";
@@ -19,7 +19,6 @@ foreach ($rows as $key => $value) {
     echo '<td>'.$value["cep"].'</td>';
     echo '<td>'.$value["lat"].'</td>';
     echo '<td>'.$value["lng"].'</td>';
-    echo '<td>'.$value["data_coleta"].'</td>';
     echo '<td>'.$value["peso"].'</td>';
     echo "</tr>";
 }

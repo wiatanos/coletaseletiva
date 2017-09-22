@@ -1,9 +1,10 @@
 <?php
 include 'connect.php';
 
-$stmt = $conn->prepare('INSERT INTO `agenda`(nome_empresa, email, telefone, endereco, bairro, lat, lng, cep, data_coleta, peso) VALUES(:nome, :email, :telefone, :endereco, :bairro, :lat, :lng, :cep, :data_coleta, :peso)');
 
- $stmt->bindParam(':nome', $_POST['nome']);
+$stmt = $conn->prepare('INSERT INTO `agenda`(nome_empresa, email, telefone, endereco, bairro, lat, lng, cep, material, peso) VALUES(:nome_empresa, :email, :telefone, :endereco, :bairro, :lat, :lng, :cep, :material, :peso)');
+
+ $stmt->bindParam(':nome_empresa', $_POST['nome']);
  $stmt->bindParam(':email', $_POST['email']);
  $stmt->bindParam(':telefone', $_POST['telefone']);
  $stmt->bindParam(':endereco', $_POST['endereco']);
@@ -11,7 +12,7 @@ $stmt = $conn->prepare('INSERT INTO `agenda`(nome_empresa, email, telefone, ende
  $stmt->bindParam(':lat', $_POST['lat']);
  $stmt->bindParam(':lng', $_POST['lng']);
  $stmt->bindParam(':cep', $_POST['cep']);
- $stmt->bindParam(':data_coleta', $_POST['data_coleta']);
+ $stmt->bindParam(':material', $_POST['material']);
  $stmt->bindParam(':peso', $_POST['peso']);
  $stmt->execute();
 

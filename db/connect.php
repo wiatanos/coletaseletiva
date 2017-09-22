@@ -4,6 +4,8 @@ $username = "root";
 $password = "";
 $base_url = "http://" . $_SERVER['SERVER_NAME'] . "/coletaseletiva";
 
+header('Content-Type: text/html; charset=utf-8');
+
 try {
   $conn = new PDO("mysql:host=$servername;dbname=coletaseletiva", $username, $password);
   // set the PDO error mode to exception

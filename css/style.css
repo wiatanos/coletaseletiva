@@ -206,6 +206,7 @@ form {
   border: 1px solid #ebebeb;
   box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
   line-height: 18px;
+  font-size: 15px;
 }
 
 form label, h4, form h3{margin: 0;padding: 0px;}
@@ -236,11 +237,11 @@ article{
 /*---------------------------- MEDIA QUERYS --------------------*/
 @media screen and (max-width: 768px) {
   #map{
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     position: relative;
   }
-  #over_map{position: relative; right: 0; left: 0;}
+  #over_map{position: relative; right: 0; left: 0; top: 10px;}
   #section1 form{
     width: 100%;
     padding: 50px;
@@ -275,7 +276,7 @@ article{
 
 /* SIDEBAR NAVIGATION */
 .sidebar {position:absolute; right:0;}
-.dot {display:inline-block; width:15px; height:15px; background-color:rgba(255,255,255,.6); box-shadow: 0px 0px 10px 0px black; border-radius:10px; z-index:999; content:''; color:transparent; font-size:14px; line-height:10px; vertical-align:middle; margin:20px 0 5px 0; font-weight:300;}
+.dot {display:inline-block; width:10px; height:10px; background-color:rgba(255,255,255,.6); box-shadow: 0px 0px 10px 0px black; border-radius:10px; z-index:999; content:''; color:transparent; font-size:14px; line-height:10px; vertical-align:middle; margin:20px 0 5px 0; font-weight:300;}
 .dot:hover {background-color:rgba(255,255,255,.8); color:rgba(255,255,255,.8);}
 .dot span {margin:0px 0px 20px 25px; position:relative; top:0px; left:-110px;}
 #nav_dot {width:100px; height:200px; padding:0 0px; position:fixed; top:50%; right:20px; transform: translate(0, -50%); z-index: 10000; text-align:right;}

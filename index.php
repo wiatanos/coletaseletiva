@@ -232,6 +232,8 @@
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe"></span></span>
                       <input type="text" name="bairro" id="bairro" class="form-control">
+                      <input type="text" name="lat" id="lat" value="" hidden>
+                      <input type="text" name="lng" id="lng" value="" hidden>
                       <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe"></span></span>
                       <input type="text" name="cep" id="cep" class="form-control">
                     </div>
@@ -242,14 +244,15 @@
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-trash"></span></span>
                       <select class="form-control" name="material" >
-                        <option value="select">select</option>
+                        <option value="Plástico">Plástico</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Papel">Papel</option>
+                        <option value="Vidro">Vidro</option>
                       </select>
                       <span class="input-group-addon" id="basic-addon1">KG</span>
                       <input type="text" name="peso" id="peso" class="form-control">
                     </div>
                   </div>
-                  <input type="text" name="lat" id="lat" value="" hidden>
-                  <input type="text" name="lng" id="lng" value="" hidden>
                   <button type="submit" class="button buttonBlue" id="btn_agenda">Agendar
                     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
                   </button>
