@@ -49,9 +49,6 @@
             </nav>
 
           <div class="col-xs-12" id="main">
-            <div class="text-center col-xs-12" id="title">
-              <img src="css/img/logocoleta2t.png" hidden>
-            </div>
             <img src="css/img/main.jpg">
             <div id="arrow_down" class="text-center">
               <a href="#section1"><i class="arrow down"></i></a>
@@ -123,6 +120,7 @@
             </div>
 
             <div class="area2 col-xs-12" id="section4">
+
               <h2 class="text-center">Material de Divulgação</h2>
               <article class="text-center">
                   <object id="pdf" data="docs/material_divulgacao.pdf" type="application/pdf" width="50%" height="500px" internalinstanceid="6" title="">
@@ -134,6 +132,7 @@
                   </button>
                   </a>
                 </article>
+
               </div>
 
               <div class="area col-xs-12" id="section5">
@@ -147,19 +146,15 @@
                     <a href="mailto:meioambiente@caraguatatuba.sp.gov.br">meioambiente@caraguatatuba.sp.gov.br</a>
                   </h4>
                 </article>
-
                 <h2 class="col-xs-12 col-md-5">Fale Conosco</h2>
-
                 <div class="input-group">
                   <select class="form-control" id="select_contato">
                     <option value="1">Agendamento</option>
                     <option value="2">Contato</option>
                   </select>
                 </div>
-                
 
                 <form method="post" action="db/mail.php" id="form_contato" class="col-xs-offset-0 col-md-offset-7" hidden>
-
                   <div class="form-group">
                     <label>Nome</label>
                     <div class="input-group">
@@ -191,10 +186,7 @@
                   </button>
                 </form>
 
-
-
                 <form method="post" action="db/form-data.php" id="form_agenda" class="col-xs-offset-0 col-md-offset-7">
-
                   <div class="form-group ">
                     <label>Nome/ Empresa</label>
                     <div class="input-group">
@@ -253,10 +245,15 @@
                       <input type="text" name="peso" id="peso" class="form-control">
                     </div>
                   </div>
+
                   <button type="submit" class="button buttonBlue" id="btn_agenda">Agendar
                     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
                   </button>
                 </form>
+              </div>
+
+              <div class="area2 col-xs-12 text-center" style="background-color: #34495e; padding: 5px;" id="section6">
+                <small style="color:white;">Desenvolvido pela Secretaria de TI de Caraguatatuba</small>
               </div>
 
             </div>
