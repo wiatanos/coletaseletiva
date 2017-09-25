@@ -138,7 +138,7 @@ $(document).ready(function(){
 			}
 		}
 	});
-	$("a").click(function(evn){
+	$("nav a").click(function(evn){
 		evn.preventDefault();
 		$('html,body').scrollTo(this.hash, this.hash);
 	});
