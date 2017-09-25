@@ -25,11 +25,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#section1">Mapa da Coleta<span class="sr-only">(current)</span></a></li>
-            <li><a href="#section2">Como Funciona</a></li>
-            <li><a href="#section3">Como Reciclar</a></li>
-            <li><a href="#section4">Material de Divulgação</a></li>
-            <li><a href="#section5">Fale Conosco</a></li>
+            <li><a href="#section1">MAPA DA COLETA<span class="sr-only">(current)</span></a></li>
+            <li><a href="#section2">COMO FUNCIONA</a></li>
+            <li><a href="#section3">COMO RECICLAR</a></li>
+            <li><a href="#section4">MATERIAL DE DIVULGAÇÃO</a></li>
+            <li><a href="#section5">FALE CONOSCO</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -124,7 +124,7 @@
               <h2 class="text-center">Material de Divulgação</h2>
               <article class="text-center">
                   <object id="pdf" data="docs/material_divulgacao.pdf" type="application/pdf" width="50%" height="500px" internalinstanceid="6" title="">
-                    alt : <a href="docs/material_divulgacao.pdf">test.pdf</a>
+                    alt : <a href="docs/material_divulgacao.pdf">material_de_divulgacao.pdf</a>
                   </object><br>
                   <a href="docs/material_divulgacao.pdf" download>
                     <button class="btn btn-default">
@@ -161,6 +161,26 @@
                       <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
                       <input type="text" name="nome" class="form-control">
                     </div>
+                    
+                    <div class="form-group ">
+                    <label>Endereço</label>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe"></span></span>
+                      <input type="text" name="endereco" id="endereco" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group ">
+                    <label>Bairro / CEP</label>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe"></span></span>
+                      <input type="text" name="bairro" id="bairro" class="form-control">
+                      <input type="text" name="lat" id="lat" value="" hidden>
+                      <input type="text" name="lng" id="lng" value="" hidden>
+                      <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe"></span></span>
+                      <input type="text" name="cep" id="cep" class="form-control">
+                    </div>
+                  </div>
 
                     <label>E-Mail</label>
                     <div class="input-group">
