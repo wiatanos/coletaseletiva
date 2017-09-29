@@ -4,7 +4,7 @@ var ano_atual = data.getFullYear();
 var mes_atual = data.getMonth()+1;
 
 
-var geocorder, map, kmzLayer;
+var geocorder, map, kmzLayer, geoXml;
 
 function initialize() {
 	geocoder = new google.maps.Geocoder();
@@ -17,12 +17,20 @@ function initialize() {
 
 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-	var ctaLayer = new google.maps.KmlLayer({
-		url: 'https://www.dropbox.com/s/5h6x7zypgtb8v6l/coleta.kml?dl=1',
-		map: map
-	});
+	// var ctaLayer = new google.maps.KmlLayer({
+	// 	url: 'https://www.dropbox.com/s/5h6x7zypgtb8v6l/coleta.kml?dl=1',
+	// 	map: map
+	// });
 
-	console.log(ctaLayer);
+	// console.log(ctaLayer);
+	var kml = 'js/coleta.kml';
+	var infowindow = new google.maps.InfoWindow({});
+
+	var myParser = new geoXML3.parser({
+		map: map,
+        singleInfoWindow: true,
+	});
+	myParser.parse(kml);
 
 
 	// Create the search box and link it to the UI element.
@@ -84,6 +92,9 @@ function initialize() {
     	map.fitBounds(bounds);
 	});
 }
+
+
+
 
 $( document ).ready( function() {
 

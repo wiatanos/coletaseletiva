@@ -60,7 +60,7 @@
               <div id="map"></div>
               <div id="over_map">
                 <span class="text-center" style="text-shadow: 0px 0px 5px black;"><h4>Coleta Seletiva Itinerarios</h4></span>
-                  <ul style="background-color: #2ecc71; margin-top: 5px;">Segunda</ul>
+                  <a id="segunda"><ul style="background-color: #2ecc71; margin-top: 5px;" >Segunda</ul></a>
                   <ul style="background-color: yellow;">Terça</ul>
                   <ul style="background-color: orange;">Quarta</ul>
                   <ul style="background-color: #3498db;">Quinta</ul>
@@ -284,7 +284,10 @@
     </body>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/geoxml3.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDNYcra7RZ5stWmAcdNk_MB6d3u15bzTlI&libraries=places"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/geocodezip/geoxml3/master/ProjectedOverlay.js"></script>
+    <script type="text/javascript" src="js/area-kml.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dialog.min.js"></script>
     <script type="text/javascript" src="js/jquery.mask.min.js"></script>
