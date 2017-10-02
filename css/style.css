@@ -65,7 +65,10 @@ h1{
 
 #over_map, #title, #arrow_down {position: absolute; z-index: 99;}
 #over_map{top: 120px; left: 170px;}
-#over_map ul{box-shadow: 0 0 5px 0 #7f8c8d; text-shadow: 1px 1px 10px black; padding: 5px; font-weight: bold; font-size: 15px; margin: 0;}
+#over_map ul{font-size: 15px; width: 100%; min-width: 150px; color: white;}
+#over_map button{border-radius:0; width: 100%;}
+#over_map li{position: relative;padding-left: 5px;font-size: 12px;letter-spacing: 1px;}
+
 #title{top: 50px; padding: 0; margin: 0;}
 #title img{width: 300px;}
 #arrow_down{bottom: 20px; left: 50%;}
@@ -117,6 +120,8 @@ h1{
       #target {
         width: 345px;
       }
+
+
 
 
 

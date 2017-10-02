@@ -60,11 +60,77 @@
               <div id="map"></div>
               <div id="over_map">
                 <span class="text-center" style="text-shadow: 0px 0px 5px black;"><h4>Coleta Seletiva Itinerarios</h4></span>
-                  <a id="segunda"><ul style="background-color: #2ecc71; margin-top: 5px;" >Segunda</ul></a>
-                  <ul style="background-color: yellow;">Terça</ul>
-                  <ul style="background-color: orange;">Quarta</ul>
-                  <ul style="background-color: #3498db;">Quinta</ul>
-                  <ul style="background-color: #d35400;">Sexta</ul>
+
+                  <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Segunda<span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="background-color: #398439;">
+                      <li style="background-color: #398439;">Jardim Capriconrio</li>
+                      <li style="background-color: #398439;">Porto Novo</li>
+                      <li style="background-color: #398439;">Pirassunga/CDP</li>
+                      <li style="background-color: #398439;">Massaguaçu/Getuba</li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" id="terca_btn" type="button" data-toggle="dropdown" style="background-color: #f1c40f;">Terça<span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="background-color: #f1c40f;">
+                      <li style="background-color: #f1c40f;">Praia das Palmeiras</li>
+                      <li style="background-color: #f1c40f;">Jardim Britânia</li>
+                      <li style="background-color: #f1c40f;">Praia da Moccoca</li>
+                      <li style="background-color: #f1c40f;">Tabatinga</li>
+                      <li style="background-color: #f1c40f;">Verde Mar</li>
+                      <li style="background-color: #f1c40f;">Jardim Olaria</li>
+                      <li style="background-color: #f1c40f;">Casa Branca</li>
+                      <li style="background-color: #f1c40f;">Pontal Santa Marina</li>
+                      <li style="background-color: #f1c40f;">Golfinho</li>
+                      <li style="background-color: #f1c40f;">Morro do Algodão</li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" id="terca_btn" type="button" data-toggle="dropdown" style="background-color: #e67e22;">Quarta<span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="background-color: #e67e22;">
+                      <li style="background-color: #e67e22;">Morro do Algodão</li>
+                      <li style="background-color: #e67e22;">Barranco Alto</li>
+                      <li style="background-color: #e67e22;">Travessão</li>
+                      <li style="background-color: #e67e22;">Pegorelli</li>
+                      <li style="background-color: #e67e22;">Jardim Aruan</li>
+                      <li style="background-color: #e67e22;">Indaia</li>
+                      <li style="background-color: #e67e22;">Poiares</li>
+                      <li style="background-color: #e67e22;">Jardim Gaivota</li>
+                      <li style="background-color: #e67e22;">Tinga</li>
+                      <li style="background-color: #e67e22;">Jaqueira</li>
+                      <li style="background-color: #e67e22;">Maristela</li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" id="terca_btn" type="button" data-toggle="dropdown" >Quinta<span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="background-color: #5bc0de;">
+                      <li style="background-color: #5bc0de;">Vapapesca</li>
+                      <li style="background-color: #5bc0de;">Perequê Mirim</li>
+                      <li style="background-color: #5bc0de;">Ipiranga</li>
+                      <li style="background-color: #5bc0de;">Prainha</li>
+                      <li style="background-color: #5bc0de;">Martim de Sa</li>
+                      <li style="background-color: #5bc0de;">Canta Galo</li>
+                      <li style="background-color: #5bc0de;">Cidade Jardim</li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" id="terca_btn" type="button" data-toggle="dropdown" style="background-color: #d35400;">Sexta<span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="background-color: #d35400;">
+                      <li style="background-color: #d35400;">Rio do Ouro</li>
+                      <li style="background-color: #d35400;">Jaraguazinho</li>
+                      <li style="background-color: #d35400;">Ponte Seca</li>
+                      <li style="background-color: #d35400;">Estrela Dalva</li>
+                      <li style="background-color: #d35400;">Jardim Primavera</li>
+                      <li style="background-color: #d35400;">Benfica</li>
+                      <li style="background-color: #d35400;">California</li>
+                    </ul>
+                  </div>
+
+
                   <a href="#section5"><input type="button" class="form-control btn btn-primary" style="margin-top: 20px;" value="Agendar Coleta"></a>
               </div>
             </div>
@@ -286,7 +352,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/geoxml3.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDNYcra7RZ5stWmAcdNk_MB6d3u15bzTlI&libraries=places"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/geocodezip/geoxml3/master/ProjectedOverlay.js"></script>
     <script type="text/javascript" src="js/area-kml.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dialog.min.js"></script>
